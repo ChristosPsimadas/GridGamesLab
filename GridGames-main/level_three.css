@@ -2,21 +2,25 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px 100px;
+
+  grid-template-areas: 
+          "a a b"
+          "c d d";
   
 }
 
 #grid-item-1 {
-    grid-column-start: span 2;
+  grid-area: a;
 }
 
 #grid-item-2 {
-
+  grid-area: b;
 }
 
 #grid-item-3 {
-
+  grid-area: c;
 }
 
 #grid-item-4 {
-    grid-column-end: span 2;
+  grid-area: d;
 }
